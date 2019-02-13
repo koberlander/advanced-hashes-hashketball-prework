@@ -174,6 +174,8 @@ end
 def team_names
   #enter the hash, location = home, team-data = list of each player /stats for location
 game_hash.collect do | location, team_data |
+  
+  #return both team names, but leave out the "return" or else you will only get one team name :)
   team_data[:team_name] 
 end
 end
