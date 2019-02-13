@@ -187,7 +187,22 @@ end
  
 
 def player_stats(player_name)
-
+# location = home or away, team_data = list of each player /stats for location
+  game_hash.each do | location, team_data |
+    
+    #drill into the next layer. Since team_data lists everything about one particular team, isolate the :players key
+    team_data.each do | attribute, data |
+      if attribute == :players
+        
+        # drill down to a player name and their stats. Check to see if the name key matches the player name that was passed in (player_name)
+        data.each do | name, statistic |
+          if name == player_name
+            binding.pry 
+end
+end
+end
+end 
+end 
 end
  
  
