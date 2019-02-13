@@ -197,7 +197,10 @@ def player_stats(player_name)
         # drill down to a player name and their stats. Check to see if the name key matches the player name that was passed in (player_name)
         data.each do | name, statistics |
           if name == player_name
-            statistics.collect do |
+            
+            #return player stats with a "/n" after each item
+            statistics.each 
+    
 end
 end
 end
