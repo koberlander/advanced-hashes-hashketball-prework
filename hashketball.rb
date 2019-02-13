@@ -198,8 +198,6 @@ def player_stats(player_name)
         data.each do | name, statistics |
           if name == player_name
             
-            #return player stats with a "/n" after each item
-            statistics.each 
     
 end
 end
