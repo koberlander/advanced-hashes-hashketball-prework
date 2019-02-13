@@ -173,17 +173,11 @@ end
 
 def team_names
   #enter the hash, location = home, team-data = list of each player /stats for location
-game_hash.each do | location, team_data |
+game_hash.collect do | location, team_data |
 
-# .each works on the original array, need a new one to display both team names (or do I?)
-  newArray = []
-  counter = 0
-  while i > team_data[:team_name].length
-  newArray << team_data[:team_name]
-  newArray
+  
 end
-  end
- end
+end
  
  
 def player_numbers(team_name) 
@@ -201,7 +195,7 @@ def big_shoe_rebounds
 
 
 #return that player's number of rebounds
-
+team_
 
 end
 
