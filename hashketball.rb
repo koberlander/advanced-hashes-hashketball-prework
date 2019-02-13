@@ -174,8 +174,9 @@ end
 def team_names
   #enter the hash, location = home, team-data = list of each player /stats for location
 game_hash.collect do | location, team_data |
-
-  
+ if team_data[:team_name] == 2
+  binding.pry
+end
 end
 end
  
