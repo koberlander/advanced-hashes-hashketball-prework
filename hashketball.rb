@@ -140,8 +140,11 @@ def num_points_scored(player_name)
 end
 
 # should write a helper method to get to team info so no need to cut paste everywhere
+
+#  the following helper method is not complete
 def get_player_info(player_name)
-game_hash.each do location
+game_hash.each do |location, team_info|
+ found_player = team_info.find
 end
 
 def shoe_size(player_name)
