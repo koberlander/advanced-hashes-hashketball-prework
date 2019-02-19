@@ -149,6 +149,7 @@ game_hash.each do | location, team_data |
         
         data.each do | name, statistic |
           if name == player_name
+            
     #return the shoe size of player_name
             return statistic[:shoe] 
         end
