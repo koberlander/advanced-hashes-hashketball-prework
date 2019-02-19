@@ -142,9 +142,17 @@ end
 # should write a helper method to get to team info so no need to cut paste everywhere
 
 #  the following helper method is not complete
+def get_all_players
+  # returns an array of all players
+  game_hash.map do |location, team_info|
+    team_info[:players]
+  end
+end
+
 def get_player_info(player_name)
-game_hash.each do |location, team_info|
- found_player = team_info.find
+  # gets hash of named player 
+get_all_players.find do |player_info|
+  player_info[:player_name]
 end
 
 def shoe_size(player_name)
