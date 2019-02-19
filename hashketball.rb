@@ -139,6 +139,10 @@ def num_points_scored(player_name)
    end
 end
 
+# should write a helper method to get to team info so no need to cut paste everywhere
+def get_player_info(player_name)
+game_hash.each do location
+end
 
 def shoe_size(player_name)
 # use same method as above to drill into stats, but this time use it for shoe size
